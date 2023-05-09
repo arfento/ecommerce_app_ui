@@ -24,7 +24,6 @@ class _MainWrapperState extends State<MainWrapper> {
 
   @override
   void initState() {
-    currentIndex = 0;
     pageController = PageController();
     super.initState();
   }

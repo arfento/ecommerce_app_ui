@@ -47,4 +47,9 @@ class AppColors {
     colors: [Color(0xff9eb6f0), Color(0xFF58b9f0)],
     stops: [0, 1],
   );
+  static const Color backgroundColor = Color(0xffebebeb);
+  static const Color darkTextColor = Color(0xff171717);
+  static const Color lightTextColor = Colors.white;
+  static const Color unSelectedTextColor = Color(0xffc9c9c9);
+  static const Color materialButtonColor = Color(0xfffa2f65);
 }
