@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'reuseable_text.dart';
 
-class MiddleAppText extends StatelessWidget {
-  const MiddleAppText({
+class SeeAllTextWidget extends StatelessWidget {
+  const SeeAllTextWidget({
     Key? key,
     required this.text,
   }) : super(key: key);

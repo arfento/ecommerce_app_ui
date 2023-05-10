@@ -39,7 +39,7 @@ class TabViewWidget extends StatelessWidget {
                 tag: current.image,
                 child: Container(
                   margin: const EdgeInsets.all(10.0),
-                  width: size.width * 0.6,
+                  width: size.width * 0.4,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
                     image: DecorationImage(
