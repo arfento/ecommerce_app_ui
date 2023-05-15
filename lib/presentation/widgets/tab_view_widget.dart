@@ -22,16 +22,17 @@ class TabViewWidget extends StatelessWidget {
       itemBuilder: (context, index) {
         TabBarModel current = list[index];
         return GestureDetector(
-          onTap: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => DetailsPage(
-                  // personData: null,
-                  // tabData: current,
-                  // isCameFromPersonSection: false,
-                  ),
-            ),
-          ),
+          // onTap: () => Navigator.push(
+          //   context,
+          //   MaterialPageRoute(
+          //     builder: (context) => DetailsPage(
+
+          //         // personData: null,
+          //         // tabData: current,
+          //         // isCameFromPersonSection: false,
+          //         ),
+          //   ),
+          // ),
           child: Stack(
             alignment: Alignment.bottomLeft,
             children: [

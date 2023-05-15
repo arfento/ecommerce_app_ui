@@ -41,11 +41,22 @@ class AppThemes {
     fontWeight: FontWeight.bold,
   );
 
+  static const TextStyle commonText = TextStyle(
+    color: AppColors.darkTextColor,
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+  );
+
   /// Details
-  static const TextStyle detailsAppBar = TextStyle(
-    color: AppColors.lightTextColor,
+  static const TextStyle detailsPageTitle = TextStyle(
+    color: AppColors.darkTextColor,
     fontWeight: FontWeight.w600,
     fontSize: 22,
+  );
+  static const TextStyle detailsPageBody = TextStyle(
+    color: AppColors.darkTextColor,
+    fontWeight: FontWeight.w400,
+    fontSize: 16,
   );
   static const TextStyle detailsMoreText = TextStyle(
       fontWeight: FontWeight.w500,

@@ -1,5 +1,6 @@
 import 'package:ecommerce_app_ui/data/models/base_model.dart';
 import 'package:ecommerce_app_ui/data/models/categories_model.dart';
+import 'package:flutter/material.dart';
 
 List<String> listSize = ["S", "M", "L", "XL", "XLL"];
 
@@ -111,3 +112,14 @@ List<BaseModel> mainList = [
 
 List<BaseModel> itemsOnCart = [];
 List<BaseModel> itemsOnSearch = [];
+
+List<String> sizes = ["S", "M", "L", "XL", "XLL"];
+List<Color> colors = const [
+  Color.fromARGB(255, 255, 176, 170),
+  Color.fromARGB(255, 189, 225, 255),
+  Color.fromARGB(255, 205, 255, 207),
+  Color.fromARGB(255, 245, 192, 255),
+  Colors.white,
+  Color.fromRGBO(250, 181, 204, 1),
+  Color.fromARGB(255, 238, 232, 177),
+];

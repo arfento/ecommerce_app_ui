@@ -17,8 +17,8 @@ class _MainWrapperState extends State<MainWrapper> {
   int currentIndex = 0;
   List<Widget> pages = const [
     HomePage(),
-    FavoritePage(),
     SearchPage(),
+    FavoritePage(),
     ProfilePage(),
   ];
 
@@ -63,8 +63,8 @@ class _MainWrapperState extends State<MainWrapper> {
             outlinedIcon: Icons.home_outlined,
           ),
           BarItem(
-            filledIcon: Icons.search_off_outlined,
-            outlinedIcon: Icons.search,
+            filledIcon: Icons.saved_search_rounded,
+            outlinedIcon: Icons.search_off_outlined,
           ),
           BarItem(
               filledIcon: Icons.favorite_rounded,

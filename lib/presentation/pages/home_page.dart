@@ -225,11 +225,11 @@ class ContentHomePage extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (context) {
-                                return const DetailsPage(
-                                    // data: mainList[index],
-                                    // isCameFromMostPopularPart: false,
-
-                                    );
+                                return DetailsPage(
+                                  data: mainList[index],
+                                  // data: mainList[index],
+                                  // isCameFromMostPopularPart: false,
+                                );
                               },
                             ),
                           );
@@ -395,16 +395,17 @@ class ContentHomePage extends StatelessWidget {
               FadeInUp(
                 delay: const Duration(milliseconds: 800),
                 child: Container(
-                  margin: const EdgeInsets.only(top: 10),
+                  margin: const EdgeInsets.only(top: 50, right: 32, left: 32),
                   width: size.width,
-                  height: size.height * 0.3,
+                  height: size.height * 0.5,
                   child: GridView.builder(
                     itemCount: mainList.length,
+                    scrollDirection: Axis.vertical,
                     physics: const BouncingScrollPhysics(),
                     gridDelegate:
                         const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
-                      childAspectRatio: 0.9,
+                      childAspectRatio: 0.8,
                     ),
                     itemBuilder: (context, index) {
                       BaseModel current = mainList[index];
@@ -415,20 +416,20 @@ class ContentHomePage extends StatelessWidget {
                             MaterialPageRoute(
                               builder: (context) {
                                 FocusManager.instance.primaryFocus?.unfocus();
-                                return const DetailsPage(
-                                    //  data: current,
-                                    //       isCameFromMostPopularPart: true,
-                                    );
+                                return DetailsPage(
+                                  data: current,
+                                  //       isCameFromMostPopularPart: true,
+                                );
                               },
                             ),
                           );
                         },
                         child: Hero(
-                            tag: current.imageUrl,
+                            tag: current.id,
                             child: Column(
                               children: [
                                 Container(
-                                  width: size.width * 0.5,
+                                  width: size.width * 0.4,
                                   height: size.height * 0.3,
                                   margin: const EdgeInsets.all(10),
                                   decoration: BoxDecoration(
@@ -460,7 +461,7 @@ class ContentHomePage extends StatelessWidget {
                                       text: "€".toString(),
                                       style:
                                           AppThemes.homeProductModel.copyWith(
-                                        color: AppColors.lightBlueSky,
+                                        color: AppColors.lightOrange,
                                       ),
                                       children: [
                                         TextSpan(
@@ -479,6 +480,10 @@ class ContentHomePage extends StatelessWidget {
                     },
                   ),
                 ),
+              ),
+              FadeInUp(
+                delay: const Duration(milliseconds: 800),
+                child: const SeeAllTextWidget(text: "Popular Product"),
               ),
             ],
           ),

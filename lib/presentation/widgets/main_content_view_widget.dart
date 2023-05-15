@@ -68,7 +68,7 @@ class MainContentViewWidget extends StatelessWidget {
                   text: TextSpan(
                       text: "€".toString(),
                       style: AppThemes.homeProductModel.copyWith(
-                        color: AppColors.lightBlueSky,
+                        color: AppColors.lightOrange,
                       ),
                       children: [
                         TextSpan(

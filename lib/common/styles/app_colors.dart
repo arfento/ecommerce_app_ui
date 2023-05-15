@@ -52,4 +52,11 @@ class AppColors {
   static const Color lightTextColor = Colors.white;
   static const Color unSelectedTextColor = Color(0xffc9c9c9);
   static const Color materialButtonColor = Color(0xfffa2f65);
+  static const List<Color> gradient = [
+    Colors.white,
+    Colors.white,
+    Color.fromARGB(176, 255, 255, 255),
+    Color.fromARGB(92, 255, 255, 255),
+    Color.fromARGB(0, 255, 255, 255),
+  ];
 }
