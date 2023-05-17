@@ -111,6 +111,7 @@ List<BaseModel> mainList = [
 ];
 
 List<BaseModel> itemsOnCart = [];
+List<BaseModel> itemsOnFavorit = [];
 List<BaseModel> itemsOnSearch = [];
 
 List<String> sizes = ["S", "M", "L", "XL", "XLL"];

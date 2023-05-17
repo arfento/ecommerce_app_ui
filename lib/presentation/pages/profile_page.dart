@@ -71,8 +71,7 @@ class BodyProfile extends StatelessWidget {
         children: <Widget>[
           const CircleAvatar(
             radius: 50,
-            backgroundImage: NetworkImage(
-                "https://avatars.githubusercontent.com/u/91388754?v=4"),
+            backgroundImage: AssetImage("assets/images/empty.png"),
           ),
           const SizedBox(
             width: 20,

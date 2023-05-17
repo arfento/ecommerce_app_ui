@@ -71,35 +71,35 @@ class AppThemes {
 
   /// Bag
 
-  static const TextStyle bagEmptyListTitle =
+  static const TextStyle cartEmptyListTitle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.w500);
-  static const TextStyle bagEmptyListSubTitle =
+  static const TextStyle cartEmptyListSubTitle =
       TextStyle(fontSize: 17, fontWeight: FontWeight.w400);
-  static const TextStyle bagTitle = TextStyle(
+  static const TextStyle cartTitle = TextStyle(
     fontWeight: FontWeight.bold,
     fontSize: 35,
   );
-  static const TextStyle bagTotal = TextStyle(
+  static const TextStyle cartTotal = TextStyle(
     fontWeight: FontWeight.bold,
     fontSize: 35,
   );
-  static const TextStyle bagProductModel = TextStyle(
+  static const TextStyle cartProductModel = TextStyle(
     fontSize: 17,
     fontWeight: FontWeight.w500,
     color: AppColors.darkTextColor,
   );
-  static const TextStyle bagProductPrice = TextStyle(
+  static const TextStyle cartProductPrice = TextStyle(
     fontSize: 20,
     fontWeight: FontWeight.bold,
     color: AppColors.darkTextColor,
   );
-  static const TextStyle bagProductNumOfShoe =
+  static const TextStyle cartProductNumOfProduct =
       TextStyle(fontSize: 17, fontWeight: FontWeight.bold);
-  static const TextStyle bagTotalPrice = TextStyle(
+  static const TextStyle cartTotalPrice = TextStyle(
       color: AppColors.darkTextColor,
       fontWeight: FontWeight.w600,
       fontSize: 16);
-  static const TextStyle bagSumOfItemOnBag = TextStyle(
+  static const TextStyle cartSumOfItemOnBag = TextStyle(
       color: AppColors.darkTextColor,
       fontWeight: FontWeight.bold,
       fontSize: 20);

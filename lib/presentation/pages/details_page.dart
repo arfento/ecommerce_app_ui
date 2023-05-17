@@ -1,6 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:animate_do/animate_do.dart';
 import 'package:ecommerce_app_ui/common/add_to_cart.dart';
+import 'package:ecommerce_app_ui/common/add_to_favorite.dart';
 import 'package:ecommerce_app_ui/common/constants.dart';
 import 'package:ecommerce_app_ui/common/reusable_button.dart';
 import 'package:ecommerce_app_ui/common/styles/app_colors.dart';
@@ -272,10 +273,16 @@ class _DetailsPageState extends State<DetailsPage> {
   AppBar _buildAppBar(BuildContext context) {
     return AppBar(
       elevation: 0,
-      backgroundColor: Colors.transparent,
+      backgroundColor: AppColors.darkGray,
       actions: [
         IconButton(
-          onPressed: () {},
+          onPressed: () {
+            print("widget data : ${widget.data}");
+            AddToFavorite.addToFavorite(
+              data: widget.data,
+              context: context,
+            );
+          },
           icon: const Icon(Icons.favorite_border),
           color: AppColors.white,
         )

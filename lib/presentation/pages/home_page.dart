@@ -100,7 +100,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                             builder: (context) => const MainWrapper()))),
                     child: const CircleAvatar(
                       radius: 30,
-                      backgroundImage: AssetImage("assets/images/main.png"),
+                      backgroundImage: AssetImage("assets/images/empty.png"),
                     ),
                   ),
                 ),
@@ -141,21 +141,6 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                         builder: (context) => const CartPage(),
                       ));
                 },
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(
-                right: 5,
-              ),
-              child: GestureDetector(
-                onTap: (() => Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const MainWrapper()))),
-                child: const CircleAvatar(
-                  radius: 30,
-                  backgroundImage: AssetImage("assets/images/main.png"),
-                ),
               ),
             ),
           ],
@@ -425,7 +410,7 @@ class ContentHomePage extends StatelessWidget {
                           );
                         },
                         child: Hero(
-                            tag: current.id,
+                            tag: current.imageUrl,
                             child: Column(
                               children: [
                                 Container(
